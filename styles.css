@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #262626;
+    color: #F2E205;
+    padding: 0 20px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+  
+.menu-btn {
+    text-decoration: none;
+    color: #F2E205;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+  
+.menu-btn:hover {
+    background-color: #F2B705;
+}
+  
+.active-btn {
+    background-color: #F2B705;
+    color: #262626;
+}
+
+.content {
+    overflow: hidden;
+}
+
+.content img {
+    float: left;
+    margin: 20px;
+}
+
+.content div {
+    overflow: hidden;
+    margin: 20px;
+}  
+
+#foundations {
+    display: block;
+}
+#specialization{
+    display: none;
+}
+#entrepreneurship {
+    display: none;
+}
+#globalevolution {
+    display: none;
+}
+
+footer {
+    background-color: #262626;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+@media (max-width: 500px) {
+    header{
+        flex-direction: column;
+    }
+    
+    .menu {
+        flex-direction: column;
+        text-align: center;
+        margin: 20px 0;
+        padding: 0;
+        gap: 20px;
+    }
+    
+    .content {
+        float: none;
+        margin: 0;
+    }
+
+    .content img {
+        float: none;
+        margin: 0;
+    }
+
+    .content div {
+        float: none;
+        margin: 10px;
+        text-align: center;
+    }
+}
